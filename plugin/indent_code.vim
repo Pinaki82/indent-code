@@ -1,4 +1,4 @@
-" Last Change: 2021-01-05  Tuesday: 02:57:55 PM
+" Last Change: 2021-01-11  Monday: 08:52:23 PM
 " Indent code
 " A Vim plugin to indent code.
 " https://unix.stackexchange.com/questions/19945/auto-indent-format-code-for-vim
@@ -28,3 +28,6 @@ endfunction
 
 :nmenu Plugin.Indent\ Code\ \(\:IndentCode\ or,\ gg\ then\ =G\) :call Indent_Code() <CR><ESC>
 command! IndentCode :call Indent_Code()
+" https://github.com/mudassir-ahmed/vim-workshop/blob/master/05-examples.md
+" https://stackoverflow.com/questions/601039/save-and-run-at-the-same-time-in-vim
+autocmd BufWritePost * :call Indent_Code() | :w
