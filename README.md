@@ -1,5 +1,5 @@
 # indent-code
-A Vim plugin to indent code.
+A Vim plugin to indent code. Indents code while saving a file.
 
 Write the following lines to your .vimrc for convenience.
 
