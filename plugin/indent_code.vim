@@ -30,4 +30,9 @@ endfunction
 command! IndentCode :call Indent_Code()
 " https://github.com/mudassir-ahmed/vim-workshop/blob/master/05-examples.md
 " https://stackoverflow.com/questions/601039/save-and-run-at-the-same-time-in-vim
-autocmd BufWritePost * :call Indent_Code() | :w
+" --------------------------------------------------------------------------------------------
+" autocmd BufWritePost * :call Indent_Code() | :w   " Autosave is disabled permanently because
+"                                                   it was causing the cursor to jump
+"                                                   at the first line while saving
+"                                                   the buffer.
+" --------------------------------------------------------------------------------------------
